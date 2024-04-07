@@ -1,0 +1,8 @@
+# Write your MySQL query statement below
+SELECT 
+    ACTOR_ID,
+    DIRECTOR_ID
+FROM 
+    ACTORDIRECTOR
+GROUP BY DIRECTOR_ID, ACTOR_ID
+HAVING COUNT(ACTOR_ID) >= 3
